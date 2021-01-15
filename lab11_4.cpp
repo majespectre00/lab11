@@ -2,6 +2,9 @@
 
 using namespace std;
 
+template <typename sixnine>
+void mySwap (sixnine &, sixnine &);
+
 int main(){
 	int x, y;
 	string a, b;
@@ -28,5 +31,13 @@ int main(){
 	cout << "p = " << p << ", q = " << q << "\n";
 
 	return 0;
+}
+
+template <typename sixnine>
+void mySwap(sixnine &x, sixnine &y){
+	sixnine teurtan;
+	teurtan = x;
+	x = y;
+	y = teurtan;
 }
 
