@@ -15,3 +15,10 @@ int main(){
 	
 	return 0;
 }
+
+void mySwap (int &x, int &y){
+	int teurtan = 0;
+	teurtan = x;
+	x = y;
+	y = teurtan;
+}
